@@ -1,4 +1,7 @@
-NOTE: This program is made for use on Linux systems, and was tested and run using Linux Mint. Therefore, it should work flawlessly on Ubuntu or Linux Mint, however I don't see any reason why it shouldn't work on any major distrobution of Linux. It can probably be adapted for use on Windows as well. Regardless, the following instructions are for Linux users only.
+NOTE: This program is made for use on Linux systems, and was tested and run using Linux Mint.
+Therefore, it should work flawlessly on Ubuntu or Linux Mint, however I don't see any reason why it shouldn't work on any
+major distrobution of Linux. It can probably be adapted for use on Windows as well.
+Regardless, the following instructions are for Linux users only.
 
 
 
@@ -8,12 +11,14 @@ Instructions for Linux Users
 1.) Install MySQL 5.7 or higher onto your Linux computer (if applicable.)
 The command "sudo apt-get install mysql-server-5.7" is the easiest way to install MySQL.
 
-2.) Next, you'll need to run the SQL scripts I've included through the mysql terminal command. Make sure you are in the same directory as the scripts, and then type these commands into the Linux terminal:
+2.) Next, you'll need to run the SQL scripts I've included through the mysql terminal command.
+Make sure you are in the same directory as the scripts, and then type these commands into the Linux terminal:
 
 sudo mysql < CreateUniversityDB.sql
 sudo mysql < PopulateUniversityDB.sql
 
-If you want to restore UniversityDB back to the default data set, simply run the two commands in order again and it will completely wipe the database and repopulate it with the original data.
+If you want to restore UniversityDB back to the default data set, simply run the two commands in order again and it will
+completely wipe the database and repopulate it with the original data.
 
 3.) You should be able to run the Java program with the IDE of your choice.
 
@@ -22,10 +27,15 @@ If you want to restore UniversityDB back to the default data set, simply run the
 Using The Program
 ---------------------
 
-1.) Logging in requires the full name of the person and their Social Security Number. There are users with the name "Dummy" and a Social Security Number of 111111111 in every category of user, simply for ease of testing.
+1.) Logging in requires the full name of the person and their Social Security Number.
+There are users with the name "Dummy" and a Social Security Number of 111111111 in every category of user,
+simply for ease of testing.
 
-2.) Students are able to search for a class by ID name, and can enroll into and drop classes. There is a maximum limit to how many students can be enrolled into a class at once. The values are intentionally left very low and unrealistic for testing purposes.
+2.) Students are able to search for a class by ID name, and can enroll into and drop classes.
+There is a maximum limit to how many students can be enrolled into a class at once.
+The values are intentionally left very low and unrealistic for testing purposes.
 
 3.) Professors are able to search through all categories using any criteria.
 
-4.) Administrators are able to perform any action they would like to edit the SQL database. They are given a text box that allows them to type in SQL commands.
+4.) Administrators are able to perform any action they would like to edit the SQL database.
+They are given a text box that allows them to type in SQL commands.
